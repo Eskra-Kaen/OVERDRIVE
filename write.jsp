@@ -28,6 +28,7 @@ for(var i = 0; i < length; i++){     // 루프를 돌면서
 <form action="index.html" method="post">
 Title : <input type="text" name="title" /><br/>
 Writer : <input type="text" name="writer"/><br/>
+Content : <input type="text" name="content"/><br/>
 Date : <input type="text" name="regdate" /><br/>
 <input type="submit" />
   <form action="index.html" method="post" onsubmit="return formCheck();">
