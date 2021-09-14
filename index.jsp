@@ -1,4 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+
+<%
+    int idx = 1;
+    String title = request.getParameter("title");
+    String writer = request.getParameter("writer");
+    String regdate = request.getParameter("regdate");
+    int count = 10000;
+    String content = request.getParameter("content");
+%>
+<tr>
+    <td><%=idx %></td>                     
+    <td><%=title %></td>
+    <td><%=writer %></td>
+    <td><%=regdate %></td>
+    <td><%=count %></td>
+</tr>
+
+
 <!DOCTYPE html>
 <html>
 <head>
