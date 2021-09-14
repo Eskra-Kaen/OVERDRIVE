@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 
 <%
+request.setCharacterEncoding("euc-kr");
     int idx = 1;
     String title = request.getParameter("title");
     String writer = request.getParameter("writer");
@@ -8,14 +9,6 @@
     int count = 10000;
     String content = request.getParameter("content");
 %>
-<tr>
-    <td><%=idx %></td>                     
-    <td><%=title %></td>
-    <td><%=writer %></td>
-    <td><%=regdate %></td>
-    <td><%=count %></td>
-</tr>
-
 
 <!DOCTYPE html>
 <html>
@@ -33,6 +26,14 @@
          <th>Date</th>
          <th>View</th>
       </tr>
+         <tr>
+    <td><%=idx %></td>                     
+    <td><%=title %></td>
+    <td><%=writer %></td>
+    <td><%=regdate %></td>
+    <td><%=count %></td>
+</tr>
+
     </table>
     <a href="write.jsp">글쓰기</a>
   </body>
